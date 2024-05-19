@@ -1,10 +1,13 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { NavBar } from './navBar'
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavigationBar from './Navbar';
 
-export const App = () => {
+const App: React.FC = () => {
   return (
     <div>
-      <NavBar />
+      <NavigationBar />
     </div>
-  )
-}
+  );
+};
+
+export default App;
