@@ -15,6 +15,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 require('./authentication/passport');
 
+app.use('/', (req, res) => {
+    res.send('hello');
+});
+
+
 mongoose.connect('mongodb+srv://aayush_mongo:mongogupta@cluster0.j8jqacb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
     .then(() => {
         app.listen(PORT, () => {
