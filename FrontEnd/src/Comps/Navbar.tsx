@@ -30,7 +30,7 @@ const NavigationBar: React.FC = () => {
                                 Log Out
                             </Button>
                         ) : (
-                            <Button variant="outline-light" onClick={() => loginWithRedirect()}>
+                            <Button variant="outline-light" href="/login">
                                 Log In
                             </Button>
                         )

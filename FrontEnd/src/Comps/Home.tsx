@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Button, Row, Col, Card } from 'react-bootstrap';
 import './Home.css'; // import your CSS file
 
-// ...
 const Home: React.FC = () => {
     return (
         <><div className="bg-image">
