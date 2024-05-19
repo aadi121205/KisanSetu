@@ -3,7 +3,7 @@ import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { useAuth0 } from '@auth0/auth0-react';
 
 const NavigationBar: React.FC = () => {
-    const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
+    const { logout, isAuthenticated } = useAuth0();
 
     const handleLogout = () => {
         logout({
