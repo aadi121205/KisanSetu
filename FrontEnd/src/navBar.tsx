@@ -2,9 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Navbar, Container, Nav } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { useAuth0 } from '@auth0/auth0-react'
-import { LoginButton } from './LoginButton'
-import { LogoutButton } from './LogoutButton'
-import { Profile } from './Profile'
+import { LoginButton } from './Loading'
+import { LogoutButton } from './Loading'
 import { Loading } from './Loading'
 
 
@@ -23,13 +22,11 @@ export const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/profile">Profile</Nav.Link>
                         <Nav.Link as={Link} to="/external-api">External API</Nav.Link>
                     </Nav>
                     <Nav>
                         <LoginButton />
                         <LogoutButton />
-                        <Profile />
                     </Nav>
                 </Navbar.Collapse>
             </Container>
