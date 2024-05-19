@@ -5,6 +5,12 @@ import { useAuth0 } from '@auth0/auth0-react';
 const NavigationBar: React.FC = () => {
     const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
 
+    const handleLogout = () => {
+        logout({
+            logoutParams: { returnTo: window.location.origin }
+        });
+    };
+
     return (
         <Navbar bg="dark" variant="dark" expand="lg">
             <Container>
@@ -17,7 +23,7 @@ const NavigationBar: React.FC = () => {
                     </Nav>
                     <Nav>
                         {isAuthenticated ? (
-                            <Button variant="outline-light" onClick={() => logout({ returnTo: window.location.origin })}>
+                            <Button variant="outline-light" onClick={handleLogout}>
                                 Log Out
                             </Button>
                         ) : (
