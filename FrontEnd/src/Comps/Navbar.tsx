@@ -37,7 +37,7 @@ const NavigationBar: React.FC = () => {
                         }
                     </Nav>
                     <Nav>
-                        <Button variant="" href="/signup"></Button>{'PLS FIX THIS'}
+                        {'PLS FIX'}
                     </Nav>
                     <Nav>
                         <Button variant="outline-light" href="/Signup">
