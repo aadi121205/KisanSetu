@@ -9,7 +9,7 @@ KisanSetu is a platform designed to connect farmers directly with buyers, elimin
 - Weather forecasts to help farmers plan their crops
 - Knowledge base with articles on best farming practices
 
-### Additional Features for KisanSetu
+## Additional Features for KisanSetu
 
 - **Crop Advisory Services**: Integration with agricultural experts to provide personalized advice on crop selection, cultivation techniques, pest control, and soil management based on the farmer's location and specific needs.
 
