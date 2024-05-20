@@ -34,23 +34,17 @@ const NavigationBar: React.FC = () => {
                         <Nav.Link href="/md">Wheat Moisture Measurer (Beta)</Nav.Link>
                     </Nav>
                     <Nav className="mr-2">
-                        {isAuthenticated ? (
-                            <Button variant="outline-light" onClick={handleLogout}>
-                                Log Out
-                            </Button>
-                        ) : (
-                            <Button variant="outline-light" href="http://localhost:4444/">
-                                Log In
-                            </Button>
-                        )
-                        }
+                        <Button variant="outline-light" href="http://localhost:4444/farmer/Login">
+                            farmer
+                        </Button>
+
                     </Nav>
                     <Nav>
                         {'PLSFIX'}
                     </Nav>
                     <Nav>
-                        <Button variant="outline-light" href="http://localhost:4444/">
-                            SignUp
+                        <Button variant="outline-light" href="http://localhost:4444/buyer/login">
+                            buyer
                         </Button>
                     </Nav>
                 </Navbar.Collapse>
