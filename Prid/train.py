@@ -1,8 +1,8 @@
 from ultralytics import YOLO
 
 # Initialize model
-model = YOLO('yolov8m.pt')
+model = YOLO('yolov8n-cls.pt')
 
 # Train
 
-results = model.train(data='data.yaml', epochs=300, device='cuda', project='runs/train', name='exp', exist_ok=True, patience = 3)
+results = model.train(data='data', epochs=300, patience = 30)
