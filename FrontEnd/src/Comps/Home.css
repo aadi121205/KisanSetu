@@ -2,6 +2,8 @@
 .bg-image {
     background-image: url('back.jpg');
     background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
 }
 
 .text-center {
@@ -11,4 +13,47 @@
 .my-5 {
     margin-top: 5rem;
     margin-bottom: 5rem;
+}
+
+.custom-card {
+    background-color: #4CAF50;
+    /* green */
+    border-radius: 15px;
+    /* rounded corners */
+    color: #8B4513;
+    /* brown text */
+    opacity: 0.9;
+
+}
+
+.my-6 {
+    margin-top: 6rem;
+    text-decoration-color: #4CAF50;
+    text-align: center;
+    color: #8B4513;
+    /* white text */
+    background-color: #4CAF50;
+    /* black background */
+    background-color: #4CAF50;
+    /* green */
+    border-radius: 15px;
+    /* rounded corners */
+    color: #8B4513;
+    /* brown text */
+    padding: 100px;
+    opacity: 0.5;
+
+}
+
+.my-7 {
+    text-decoration-color: #4CAF50;
+    text-align: center;
+    color: #8B4513;
+    /* white text */
+    background-color: hsl(180, 90%, 50%);
+    border-radius: 15px;
+    /* rounded corners */
+    color: #8B4513;
+    /* brown text */
+    padding: auto;
 }
