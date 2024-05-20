@@ -2,30 +2,27 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const buyerSchema = new Schema({
-    name:{
-        type:string,
+    username:{
+        type:String,
         required:true
         },
         password:{
-        type:string,
+        type:String,
         required:true
         },
         contact_no:{
-        type:string,
+        type:String,
         required:true
         },
         email:{
-        type:string,
+        type:String,
         required:true
         },
         identification_of_business:{
-        type:string,
+        type:String,
         required:true
         },
-        admin_powers:{
-        type:bool,
-        required:true
-        },
+
 })
 
 module.exports = mongoose.model('buyer', buyerSchema);
