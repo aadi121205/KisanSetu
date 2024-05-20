@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 # Initialize model
-model = YOLO('runs/classify/train/weights/last.pt')
+model = YOLO('/home/aadi/Projects/KisanSetu/Prid/runs/classify/train/weights/best.pt')
 
 # Test
 

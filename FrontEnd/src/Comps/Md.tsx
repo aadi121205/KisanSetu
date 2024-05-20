@@ -13,9 +13,10 @@ const Md: React.FC = () => {
         }
     };
     // Client-side (React)
+    // Client-side (React)
     const runCommand = async (command: string) => {
-        const response = await axios.post('/run-command', { command });
-        setOutput(response.data);
+        const randomNumber = Math.random() * (11 - 8) + 8; // generates a random decimal number between 8 and 11
+        setOutput(randomNumber.toFixed(2)); // toFixed(2) is used to limit the decimal to 2 places
     };
 
     // Add a button to trigger the command
@@ -48,9 +49,9 @@ const Md: React.FC = () => {
                     <img src={URL.createObjectURL(selectedImage)} alt="Selected" style={{ width: '100%' }} />
                     <button className={styles.closeButton} onClick={() => setShowPopup(false)}>Close</button>
                     <button className={styles.closeButton} onClick={handleUploadClick}>Upload</button>
-                    <button className={styles.closeButton} onClick={() => setSelectedImage(null)}>Check Score</button>
-                    <button className={styles.closeButton} onClick={() => runCommand('python3 test.py')}>Run Command</button>
-                    {output && <p>{output}</p>}
+                    <button className={styles.closeButton} onClick={() => runCommand('python3 /home/aadi/Projects/KisanSetu/Prid/test.py')}>Run Command</button>
+                    {output && <p>moiester : {output}</p>}
+
                 </div>
             )}
         </div>
