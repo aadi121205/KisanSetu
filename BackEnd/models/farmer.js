@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const farmerSchema = new Schema({
-    name:{
+    username:{
         type:String,
         required:true
          },
