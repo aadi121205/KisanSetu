@@ -31,17 +31,17 @@ const NavigationBar: React.FC = () => {
                             </Button>
                         ) : (
                             <Button variant="outline-light" href="/login">
-                                Buyer
+                                Log In
                             </Button>
                         )
                         }
                     </Nav>
                     <Nav>
-                        {'PLS FIX'}
+                        {'PLSFIX'}
                     </Nav>
                     <Nav>
                         <Button variant="outline-light" href="/Signup">
-                            Farmer
+                            SignUp
                         </Button>
                     </Nav>
                 </Navbar.Collapse>
