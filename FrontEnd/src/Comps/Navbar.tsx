@@ -24,7 +24,7 @@ const NavigationBar: React.FC = () => {
                         <Nav.Link href="/profile">Profile</Nav.Link>
                         <Nav.Link href="/admin">Admin</Nav.Link>
                     </Nav>
-                    <Nav>
+                    <Nav className="mr-2">
                         {isAuthenticated ? (
                             <Button variant="outline-light" onClick={handleLogout}>
                                 Log Out
@@ -35,6 +35,14 @@ const NavigationBar: React.FC = () => {
                             </Button>
                         )
                         }
+                    </Nav>
+                    <Nav>
+                        <Button variant="" href="/signup"></Button>{'PLS FIX THIS'}
+                    </Nav>
+                    <Nav>
+                        <Button variant="outline-light" href="/Signup">
+                            Sign Up
+                        </Button>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

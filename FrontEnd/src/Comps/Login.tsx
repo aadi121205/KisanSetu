@@ -44,6 +44,7 @@ const LoginPage: React.FC = () => {
                                     />
                                 </div>
                                 <button type="submit" className="btn btn-primary w-100">Login</button>
+                                <button type="button" className="btn btn-link w-100">Forgot password?</button>
                             </form>
                         </div>
                     </div>
