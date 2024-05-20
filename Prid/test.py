@@ -1,8 +1,8 @@
 from ultralytics import YOLO
 
 # Initialize model
-model = YOLO('yolov8m.pt')
+model = YOLO('runs/classify/train/weights/last.pt')
 
 # Test
 
-results = model.predict()
+results = model.predict('data/train/Healthy')

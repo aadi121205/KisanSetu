@@ -12,6 +12,13 @@ const Md: React.FC = () => {
             setSelectedImage(e.target.files[0]);
         }
     };
+    // Client-side (React)
+    const runCommand = async (command: string) => {
+        const response = await axios.post('/run-command', { command });
+        setOutput(response.data);
+    };
+
+    // Add a button to trigger the command
 
     const handleUploadClick = async () => {
         if (selectedImage) {
@@ -42,6 +49,7 @@ const Md: React.FC = () => {
                     <button className={styles.closeButton} onClick={() => setShowPopup(false)}>Close</button>
                     <button className={styles.closeButton} onClick={handleUploadClick}>Upload</button>
                     <button className={styles.closeButton} onClick={() => setSelectedImage(null)}>Check Score</button>
+                    <button className={styles.closeButton} onClick={() => runCommand('python3 test.py')}>Run Command</button>
                     {output && <p>{output}</p>}
                 </div>
             )}
