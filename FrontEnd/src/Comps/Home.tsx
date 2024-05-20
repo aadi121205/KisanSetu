@@ -4,7 +4,7 @@ import './Home.css'; // import your CSS file
 
 const Home: React.FC = () => {
     return (
-        <><div className="bg-image">
+        <><div> // className="bg-image"
             <br className='' />
             <br className='' />
             <div className="text-center">
@@ -50,9 +50,9 @@ const Home: React.FC = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    </Row>
-                    <Row><br></br></Row>
-                    <Row>
+                </Row>
+                <Row><br></br></Row>
+                <Row>
                     <Col md={4}>
                         <Card>
                             <Card.Body>
@@ -118,7 +118,6 @@ const Home: React.FC = () => {
                         <Button variant="primary" href="#community">Learn More</Button>
                     </Col>
                 </Row>
-
             </Container>
         </div>
         </>

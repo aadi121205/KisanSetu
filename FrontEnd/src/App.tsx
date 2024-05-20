@@ -9,8 +9,10 @@ import Admin from './Comps/Admin';
 import LoginPage from './Comps/Login';
 import Footer from './Comps/Footer'; // Import the Footer component
 import SignupPage from './Comps/Signup';
+import Md from './Comps/Md'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 const App: React.FC = () => {
   return (
@@ -24,6 +26,7 @@ const App: React.FC = () => {
         <Route path="/admin" element={<Admin />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
+        <Route path='/Md' element={<Md />} />
       </Routes>
       <Footer /> {/* Include the Footer component */}
     </Router>

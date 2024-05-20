@@ -1,0 +1,8 @@
+path: /home/aadi/Projects/KisanSetu/Prid/data
+train: train # train images (relative to 'path') 4 images
+val: val # val images (relative to 'path') 4 images
+
+names:
+  0: Brown_rust
+  1: Healthy
+  2: Yellow_rust

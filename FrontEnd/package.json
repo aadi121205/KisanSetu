@@ -12,8 +12,11 @@
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",
     "@types/react-bootstrap": "^0.32.36",
+    "axios": "^1.7.0",
     "bootstrap": "^5.3.3",
+    "express": "^4.19.2",
     "leaflet": "^1.9.4",
+    "multer": "^1.4.5-lts.1",
     "ra-data-json-server": "^4.16.17",
     "react": "^18.2.0",
     "react-admin": "^4.16.17",

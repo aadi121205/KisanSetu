@@ -12,22 +12,22 @@ const Footer: React.FC = () => {
                 </Row>
                 <Row className="mb-3">
                     <Col className="text-center text-lg">
-                        <p className="mb-0">123 Main Street, New York, NY 10001</p>
+                        <p className="mb-0">Delhi Technological University, DTU, Formerly DCE, Rohini, Bawana Road</p>
                     </Col>
                     <Col className="text-center text-lg">
                         <p className="mb-0">
-                            <a href="tel:555-555-5555">555-555-5555</a>
+                            <a href="tel:9891966228">9891966228</a>
                         </p>
                     </Col>
                     <Col className="text-center text-lg">
                         <p className="mb-0">
-                            <a href="mailto:aaditya.tec@gmail.com">aaditya.tec@gmail.com</a>
+                            <a href="mailto:aaditya.tec@gmail.com">ksetu_help@gmail.com</a>
                         </p>
                     </Col>
                 </Row>
                 <Row className="mb-3">
-                    <Col className="text-center text-lg">
-                        <p className="mb-0">© 2022 Your Company Name. All rights reserved.</p>
+                    <Col className="text-center text-lg ">
+                        <p className="mb-0">© 2024 KisanSetu. All rights reserved.</p>
                     </Col>
                 </Row>
             </Container>
