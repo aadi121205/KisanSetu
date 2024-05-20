@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
                 </Row>
                 <Row className="mb-3">
                     <Col className="text-center text-lg">
-                        <p className="mb-0">123 Main Street, New York, NY 10001</p>
+                        <p className="mb-0">Delhi Technological University, DTU, Formerly DCE, Rohini, Bawana Road</p>
                     </Col>
                     <Col className="text-center text-lg">
                         <p className="mb-0">
