@@ -21,9 +21,9 @@ const Home: React.FC = () => {
                         <Card className="custom-card">
 
                             <Card.Body>
-                                <Card.Title>Advocacy</Card.Title>
+                                <Card.Title>Price Detection</Card.Title>
                                 <Card.Text>
-                                    We fight for the rights of farmers at the local, national, and international levels.
+                                    Get the apt price of your crops
                                 </Card.Text>
                                 <Button variant="primary" href="/about">Read More</Button>
                             </Card.Body>
@@ -33,9 +33,9 @@ const Home: React.FC = () => {
                         <Card className="custom-card">
 
                             <Card.Body>
-                                <Card.Title>Education</Card.Title>
+                                <Card.Title>Classification</Card.Title>
                                 <Card.Text>
-                                    Providing educational resources and training programs for sustainable farming.
+                                    Get the crop tag for selling!
                                 </Card.Text>
                                 <Button variant="primary" href="/about">Read More</Button>
                             </Card.Body>
@@ -47,7 +47,7 @@ const Home: React.FC = () => {
                             <Card.Body>
                                 <Card.Title>Support</Card.Title>
                                 <Card.Text>
-                                    Offering support services including legal advice and financial planning.
+                                    Offering support services including crop planning to get the desired tag as per the buyer's demand.
                                 </Card.Text>
                                 <Button variant="primary" href="/about">Read More</Button>
                             </Card.Body>
@@ -60,9 +60,9 @@ const Home: React.FC = () => {
                         <Card className="custom-card">
 
                             <Card.Body>
-                                <Card.Title>Community</Card.Title>
+                                <Card.Title> Buyer Community</Card.Title>
                                 <Card.Text>
-                                    Join our community of farmers to share knowledge and resources.
+                                    Join our community of Buyers to get the desired type of crop for you specific requirements.
                                 </Card.Text>
                                 <Button variant="primary" href="/about">Read More</Button>
                             </Card.Body>
@@ -84,9 +84,9 @@ const Home: React.FC = () => {
                         <Card className="custom-card">
 
                             <Card.Body>
-                                <Card.Title>Resources</Card.Title>
+                                <Card.Title> Current Storage</Card.Title>
                                 <Card.Text>
-                                    Access our library of resources on sustainable farming and best practices.
+                                    Access our data of presently available stock of various crops.
                                 </Card.Text>
                                 <Button variant="primary" href="/about">Read More</Button>
                             </Card.Body>
@@ -110,14 +110,14 @@ const Home: React.FC = () => {
                     <Col md={12} className="text-center my-7">
                         <h2 id="learn-more">Learn More</h2>
                         <p>Find out more about our mission, values, and services.</p>
-                        <Button variant="primary" href="/about">About Us</Button>
+                        <Button variant="primary" href="#about">About Us</Button>
                     </Col>
                 </Row>
                 <Row>
                     <Col md={6} className="my-6">
                         <h2 id="advocacy">Advocacy</h2>
                         <p>We advocate for the rights of farmers at the local, national, and international levels. Our goal is to ensure that farmers have access to the resources and support they need to thrive.</p>
-                        <Button variant="primary" href="/about">Learn More</Button>
+                        <Button variant="primary" href="#advocacy">Learn More</Button>
                     </Col>
                     <Col md={6} className="my-6">
                         <h2 id="education">Education</h2>
@@ -134,7 +134,7 @@ const Home: React.FC = () => {
                     <Col md={6} className="my-6">
                         <h2 id="community">Community</h2>
                         <p>Join our community of farmers to share knowledge and resources. Our goal is to create a network of support for farmers to connect, learn, and grow together.</p>
-                        <Button variant="primary" href="/about">Learn More</Button>
+                        <Button variant="primary" href="#community">Learn More</Button>
                     </Col>
                 </Row>
             </Container>
