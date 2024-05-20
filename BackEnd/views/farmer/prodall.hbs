@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Products Page</title>
+        <style>
+        nav{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Farmer Products List</h1>
+
+    <ul>
+        {{#each products as |p|}}
+        <li>
+            {{!-- <img height="150px" src={{p.imageUrl}}></img><br> --}}
+            <span><h1>{{p.category}}</h1></span> <br>
+            Crop Name: <span>{{p.crop_name}}</span><br>
+            Quantity: <span>{{p.quantity}}</span><br>
+            Base Price: <span>Rs. {{p.base_price}}</span><br>
+            Moisture: <span>{{p.moisture}}%</span><br>
+            Function price: <span>Rs. {{p.function_price}}</span><br>
+            Farmer price: <span>Rs. {{p.farmer_selected_price}}</span><br>
+            {{!-- Date: <span>Date {{p.moisture}}</span><br> --}}
+            {{!-- {{> reviewSection product=p}} --}}
+            {{!-- <a href={{p._id}}>GET Info</a> --}}
+        </li>
+        {{/each}}
+    </ul>
+    <a href="/farmer/profile">Profile</a>
+
+</body>
+
+</html>

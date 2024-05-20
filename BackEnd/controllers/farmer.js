@@ -44,3 +44,39 @@ module.exports.getProfile = (req,res,next)=>{
         user:req.user
     })
 }
+
+module.exports.getAddProduct=(req,res,next)=>{
+    res.render('farmer/farmeradd');
+}
+
+module.exports.postAddProduct = async (req,res,next)=>{
+    const {category,crop_name,quantity,base_price,moisture,function_price,farmer_selected_price} = req.body;
+    try{
+        await products.create({
+            category,
+            crop_name,
+            quantity,
+            base_price,
+            moisture,
+            function_price,
+            farmer_selected_price
+        });
+        res.render('farmer/farmerprofile');
+    }catch(err){
+        // req.flash('msg','Error Adding a New Product');
+        next(err);
+    }
+}
+
+module.exports.getProductsAll = async (req,res,next)=>{
+    try{
+        let allProducts = await products.find();
+        // console.log(allProducts)
+        res.render('farmer/prodall',{
+            products: allProducts
+        })
+    }catch(err){
+        // req.flash('msg','Error Reading All Admin Product');
+        next(err);
+    }
+}
