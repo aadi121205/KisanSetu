@@ -33,5 +33,5 @@ git clone https://github.com/yourusername/KisanSetu.git
 cd KisanSetu
 npm install
 npm start
-The application will be running at http://localhost:3000.
+#The application will be running at http://localhost:3000.
 
