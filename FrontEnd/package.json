@@ -13,11 +13,13 @@
     "@auth0/auth0-react": "^2.2.4",
     "@types/react-bootstrap": "^0.32.36",
     "bootstrap": "^5.3.3",
+    "leaflet": "^1.9.4",
     "ra-data-json-server": "^4.16.17",
     "react": "^18.2.0",
     "react-admin": "^4.16.17",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
