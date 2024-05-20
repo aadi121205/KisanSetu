@@ -23,6 +23,7 @@ const NavigationBar: React.FC = () => {
                         <Nav.Link href="/contact">Contact</Nav.Link>
                         <Nav.Link href="/profile">Profile</Nav.Link>
                         <Nav.Link href="/admin">Admin</Nav.Link>
+                        <Nav.Link href="/md">Md</Nav.Link>
                     </Nav>
                     <Nav className="mr-2">
                         {isAuthenticated ? (
