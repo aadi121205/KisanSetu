@@ -1,4 +1,4 @@
-# KisanSetu# KisanSetu
+# KisanSetu
 
 KisanSetu is a platform designed to connect farmers directly with buyers, eliminating the need for intermediaries. It aims to empower farmers by providing them with the right tools and information to make informed decisions.
 
