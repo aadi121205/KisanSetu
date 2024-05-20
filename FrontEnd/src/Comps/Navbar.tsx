@@ -39,7 +39,7 @@ const NavigationBar: React.FC = () => {
                                 Log Out
                             </Button>
                         ) : (
-                            <Button variant="outline-light" href="/login">
+                            <Button variant="outline-light" href="http://localhost:4444/">
                                 Log In
                             </Button>
                         )
@@ -49,7 +49,7 @@ const NavigationBar: React.FC = () => {
                         {'PLSFIX'}
                     </Nav>
                     <Nav>
-                        <Button variant="outline-light" href="/Signup">
+                        <Button variant="outline-light" href="http://localhost:4444/">
                             SignUp
                         </Button>
                     </Nav>
