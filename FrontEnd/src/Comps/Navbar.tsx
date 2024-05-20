@@ -37,11 +37,11 @@ const NavigationBar: React.FC = () => {
                         }
                     </Nav>
                     <Nav>
-                        {'PLS FIX'}
+                        {'PLSFIX'}
                     </Nav>
                     <Nav>
                         <Button variant="outline-light" href="/Signup">
-                            Sign Up
+                            SignUp
                         </Button>
                     </Nav>
                 </Navbar.Collapse>
