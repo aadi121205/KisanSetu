@@ -25,8 +25,8 @@ const Md: React.FC = () => {
                 <div className={styles.popup}>
                     <img src={URL.createObjectURL(selectedImage)} alt="Selected" style={{ width: '100%' }} />
                     <button className={styles.closeButton} onClick={() => setShowPopup(false)}>Close</button>
-                    <button className={styles.uploadButton}>Upload</button>
-                    <button className={styles.scoreButton} onClick={() => setSelectedImage(null)}>Check Score</button>
+                    <button className={styles.closeButton}>Upload</button>
+                    <button className={styles.closeButton} onClick={() => setSelectedImage(null)}>Check Score</button>
                 </div>
             )}
         </div>
