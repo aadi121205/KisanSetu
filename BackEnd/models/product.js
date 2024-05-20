@@ -11,20 +11,20 @@ const productSchema = new Schema({
         required:true
         },
         quantity:{
-        type:float,
+        type:Number,
         required:true
         },
         base_price:{
-        type:float,
+        type:Number,
         required:true
         },
-        moisture:float,
+        moisture:Number,
         function_price:{
-        type:float,
+        type:Number,
         required:true
         },
         farmer_selected_price:{
-        type:float,
+        type:Number,
         required:true
         }
 })

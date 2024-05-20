@@ -14,11 +14,14 @@ const passport = require('./authentication/passport');
 app.use(passport.initialize());
 app.use(passport.session());
 require('./authentication/passport');
+const homeRouter = require('./routes/home');
+app.use('/', homeRouter);
 
-app.use('/', (req, res) => {
-    res.send('hello');
-});
+const buyerRouter = require('./routes/buyer');
+app.use('/buyer', buyerRouter);
 
+const farmerRouter = require('./routes/farmer');
+app.use('/farmer', farmerRouter);
 
 mongoose.connect('mongodb+srv://aayush_mongo:mongogupta@cluster0.j8jqacb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
     .then(() => {
