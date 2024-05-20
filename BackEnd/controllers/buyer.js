@@ -39,3 +39,9 @@ module.exports.postSignUp = async (req, res, next) => {
         next(err);
     }
 }
+
+module.exports.getProfile = (req,res,next)=>{
+    res.render('buyer/buyerprofile',{
+        user:req.user
+    })
+}

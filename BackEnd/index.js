@@ -13,7 +13,13 @@ app.use(require('express-session')({ secret: 'keyboard cat', resave: true, saveU
 const passport = require('./authentication/passport');
 app.use(passport.initialize());
 app.use(passport.session());
-require('./authentication/passport');
+// const portpass = require('./authentication/portpass');
+// app.use(portpass.initialize());
+// app.use(portpass.session());
+
+
+
+
 const homeRouter = require('./routes/home');
 app.use('/', homeRouter);
 

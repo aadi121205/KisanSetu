@@ -38,3 +38,9 @@ module.exports.postSignUp = async (req, res, next) => {
         next(err);
     }
 }
+
+module.exports.getProfile = (req,res,next)=>{
+    res.render('farmer/farmerprofile',{
+        user:req.user
+    })
+}
