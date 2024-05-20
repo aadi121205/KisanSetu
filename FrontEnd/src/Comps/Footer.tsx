@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
             <Container>
                 <Row className="mb-3">
                     <Col className="text-center text-lg">
-                        <p className="mb-0">Your Company Name</p>
+                        <p className="mb-0">Kisan Setu</p>
                     </Col>
                 </Row>
                 <Row className="mb-3">
