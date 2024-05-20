@@ -31,7 +31,7 @@ const NavigationBar: React.FC = () => {
                             </Button>
                         ) : (
                             <Button variant="outline-light" href="/login">
-                                Log In
+                                Buyer
                             </Button>
                         )
                         }
@@ -41,7 +41,7 @@ const NavigationBar: React.FC = () => {
                     </Nav>
                     <Nav>
                         <Button variant="outline-light" href="/Signup">
-                            Sign Up
+                            Farmer
                         </Button>
                     </Nav>
                 </Navbar.Collapse>
