@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import './Footer.css'; // import your CSS file
+
 
 const Footer: React.FC = () => {
     return (
@@ -7,16 +9,17 @@ const Footer: React.FC = () => {
             <Container>
                 <Row className="mb-3">
                     <Col className="text-center text-lg">
-                        <p className="mb-0">Your Company Name</p>
+                        <h3 className="mb-0">KisanSetu</h3>
                     </Col>
                 </Row>
+                <Row className="mb-3"><br></br></Row>
                 <Row className="mb-3">
                     <Col className="text-center text-lg">
-                        <p className="mb-0">123 Main Street, New York, NY 10001</p>
+                        <p className="mb-0">Delhi Technological University(DCE), Rohini, Bawana Road</p>
                     </Col>
                     <Col className="text-center text-lg">
                         <p className="mb-0">
-                            <a href="tel:555-555-5555">555-555-5555</a>
+                            <a href="tel:9999697291">9999697291</a>
                         </p>
                     </Col>
                     <Col className="text-center text-lg">
@@ -25,9 +28,10 @@ const Footer: React.FC = () => {
                         </p>
                     </Col>
                 </Row>
+                <Row className="mb-3"><br></br></Row>
                 <Row className="mb-3">
                     <Col className="text-center text-lg">
-                        <p className="mb-0">© 2022 Your Company Name. All rights reserved.</p>
+                        <p className="mb-0">© 2022 KisanSetu. All rights reserved.</p>
                     </Col>
                 </Row>
             </Container>
