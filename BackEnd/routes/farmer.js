@@ -6,6 +6,8 @@ const passport = require('passport');
 const farmerController = require('../controllers/farmer');
 // const farmer = require('../models/farmer');
 const isLoggedIn = require('../middlewares/isLoggedIn');
+router.get('/addproduct', farmerController.getAddProduct);
+router.get('/products', farmerController.getProductsAll);
 router.get('/login', farmerController.getLogin);
 router.get('/signup', farmerController.getSignUp);
 router.post('/signup', farmerController.postSignUp);
@@ -22,4 +24,5 @@ router.post('/login',
     function (req, res) {
         res.redirect('/farmer/profile');
     });
+router.post('/addproduct', farmerController.postAddProduct);
 module.exports = router;

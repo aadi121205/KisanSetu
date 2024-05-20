@@ -5,28 +5,28 @@ const productSchema = new Schema({
     category:{
         type:String,
         required:true
-        },
-        crop_name:{
+    },
+    crop_name:{
         type:String,
         required:true
-        },
-        quantity:{
+    },
+    quantity:{
         type:Number,
         required:true
-        },
-        base_price:{
+    },
+    base_price:{
         type:Number,
         required:true
-        },
-        moisture:Number,
-        function_price:{
+    },
+    moisture:Number,
+    function_price:{
         type:Number,
         required:true
-        },
-        farmer_selected_price:{
+    },
+    farmer_selected_price:{
         type:Number,
         required:true
-        }
+    }
 })
 
 module.exports = mongoose.model('product', productSchema);
