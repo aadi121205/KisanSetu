@@ -50,6 +50,9 @@ const Home: React.FC = () => {
                             </Card.Body>
                         </Card>
                     </Col>
+                    </Row>
+                    <Row><br></br></Row>
+                    <Row>
                     <Col md={4}>
                         <Card>
                             <Card.Body>
