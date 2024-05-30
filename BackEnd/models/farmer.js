@@ -2,24 +2,21 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const farmerSchema = new Schema({
-    name:{
-        type:string,
+    username:{
+        type:String,
         required:true
          },
     password:{
-        type:string,
+        type:String,
         required:true
          },
     contact_no:{
-        type:string,
+        type:String,
         required:true
          },
     email:String,
-    product_id:array,
-    admin_powers:{
-    type:bool,
-    required:true
-    },
+    product_id:Array,
+    
 })
 
 module.exports = mongoose.model('farmer', farmerSchema);
